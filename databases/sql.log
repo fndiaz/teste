@@ -1,0 +1,9 @@
+timestamp: 2014-10-31T11:26:39.009999
+CREATE TABLE article(
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(512),
+    article_text TEXT,
+    picture VARCHAR(512),
+    thumbnail VARCHAR(512)
+);
+success!

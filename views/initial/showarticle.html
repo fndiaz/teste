@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+
+
+{{block center}}
+
+<article>
+<h1> {{=article.title}}</h1>
+ 
+<div style="width:200px; height:200px; max-width:200px; overflow:hidden;">
+   <img src="{{=URL(a='teste', c='static', f='images')}}/article/{{=article.thumbnail}}" />
+</div>
+<br>
+<img src="{{=URL(a='teste', c='static', f='images')}}/article/{{=article.picture}}" />
+ 
+<p>{{=MARKMIN(article.article_text)}}</p>
+ 
+</article>
+
+
+{{end}}
